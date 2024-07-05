@@ -4,13 +4,15 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>6570dba2-f994-44cb-882c-2ad271e2e01c</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>pdf_scrape.py</StartupFile>
+    <StartupFile>gui.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>pdf_scrape</Name>
     <RootNamespace>pdf_scrape</RootNamespace>
+    <IsWindowsApplication>False</IsWindowsApplication>
+    <LaunchProvider>Web launcher</LaunchProvider>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,7 +23,12 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="pdf_scrape.py" />
+    <Compile Include="gui.py" />
+    <Compile Include="scrape_functions.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="module1.py" />
+    <Content Include="wristbandDataCollection.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

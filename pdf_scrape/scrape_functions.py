@@ -1,7 +1,11 @@
 
 print("First Line")
 import PyPDF2 
+import gui
  
+gui.service_func()
+
+print("First Line")
 # creating a pdf file object 
 pdfFileObj = open(r'C:\Users\josh_\Downloads\transaction_34978351.pdf', 'rb') 
  
@@ -10,6 +14,7 @@ pdfReader = PyPDF2.PdfReader(pdfFileObj)
 # creating a page object 
 pageObj = pdfReader.pages[0] 
  
+gui.service_func()
 
 res=pageObj.extract_text()
 res_split = res.split()
